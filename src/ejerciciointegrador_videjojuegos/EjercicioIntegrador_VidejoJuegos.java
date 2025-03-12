@@ -37,6 +37,15 @@ public class EjercicioIntegrador_VidejoJuegos {
         juegos.get(4).setConsola("Nintendo 64");
         juegos.get(4).setCantidadJugadores(1);
         
+        for (VideoJuego j : juegos) {
+            System.out.println("Titulo: " + j.getTitulo() + ", Consola: "
+                    + j.getConsola() + ", Cantidad de Jugadores: " + j.getCantidadJugadores());
+        }
+        
+        System.out.println(" ");
+        System.out.println("-----------Titulos para N64----------");
+        System.out.println(" ");
+        
         for (VideoJuego ju : juegos) {
             if (ju.getConsola().equals("Nintendo 64")) {
                 System.out.println(ju.toString());
